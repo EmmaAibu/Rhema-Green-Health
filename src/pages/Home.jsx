@@ -92,7 +92,7 @@ const Home = () => {
                 ${product.price.toFixed(2)}
               </p>
               <Link
-                to={`/product/${product._id}`}
+                to={`/products/${product._id}`}
                 className="mt-auto bg-green-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-green-700 transition"
               >
                 View Details

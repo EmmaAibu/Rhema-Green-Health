@@ -24,9 +24,7 @@ const ProductDetail = () => {
 
           // Set main image from Cloudinary if available
           if (foundProduct.images?.length > 0) {
-            setMainImage(
-              `https://res.cloudinary.com/du9oqg7ji/image/upload/rhema-green-health/product_images/${foundProduct.images[0]}`
-            );
+            setMainImage(`${foundProduct.images[0]}`);
           } else {
             // Optionally: set a placeholder image or keep it null
             setMainImage(null);
@@ -93,7 +91,7 @@ const ProductDetail = () => {
           {/* Thumbnail Image List */}
           <div className="flex gap-2 flex-wrap">
             {product.images?.map((img, idx) => {
-              const imageUrl = `https://res.cloudinary.com/du9oqg7ji/image/upload/rhema-green-health/product_images/${img}`;
+              const imageUrl = `${img}`;
               return (
                 <img
                   key={idx}

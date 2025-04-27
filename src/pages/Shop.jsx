@@ -80,7 +80,7 @@ const Shop = () => {
                   ${product.price}
                 </p>
                 <Link
-                  to={`/product/${product.id || product._id}`}
+                  to={`/products/${product.id || product._id}`}
                   className="block bg-green-700 hover:bg-green-800 text-white text-center py-2 rounded-md transition"
                 >
                   View Details
