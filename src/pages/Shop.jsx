@@ -28,6 +28,8 @@ const Shop = () => {
     );
   }, [search, ads]);
 
+  console.log(filteredProducts);
+
   return (
     <div className="bg-gray-100 min-h-screen p-6">
       <div className="max-w-7xl mx-auto space-y-6">
@@ -62,12 +64,12 @@ const Shop = () => {
               >
                 <img
                   src={
-                    product.image && product.image.length > 0
-                      ? `https://res.cloudinary.com/du9oqg7ji/image/upload/rhema-green-health/product_images/${product.image[0]}`
-                      : "https://via.placeholder.com/300x200.png?text=No+Image"
+                    product?.images && product.images?.length > 0
+                      ? `${product.images[0]}`
+                      : "https://via.placeholder.com/300x200.png?text=No+Image" /// images
                   }
                   alt={product.name}
-                  className="w-full h-40 object-cover rounded-lg mb-3"
+                  className="w-full h-40 object-contain rounded-lg mb-3"
                 />
 
                 <h2 className="text-base font-semibold text-gray-800">

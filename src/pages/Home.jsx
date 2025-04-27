@@ -76,10 +76,15 @@ const Home = () => {
               className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-4 flex flex-col items-center"
             >
               <img
-                src={product.image}
+                src={
+                  product?.images && product.images?.length > 0
+                    ? `${product.images[0]}`
+                    : "https://via.placeholder.com/300x200.png?text=No+Image" /// images
+                }
                 alt={product.name}
-                className="h-40 w-full object-contain mb-4 rounded-lg"
+                className="w-full h-40 object-contain rounded-lg mb-3"
               />
+
               <h4 className="text-lg font-semibold text-center text-gray-800 mb-1">
                 {product.name}
               </h4>
