@@ -2,8 +2,9 @@ import React from "react";
 
 const OrderHistory = () => {
   const orders = [
-    { id: "ORD001", date: "2024-12-01", total: "$39.98", status: "Delivered" },
-    { id: "ORD002", date: "2025-01-15", total: "$19.99", status: "Shipped" },
+    { id: "ORD001", date: "2025-04-28", total: "$99.98", status: "Shipped" },
+    { id: "ORD002", date: "2025-04-28", total: "$6.99", status: "Shipped" },
+    { id: "ORD002", date: "2025-04-28", total: "$19.99", status: "Shipped" },
   ];
 
   return (

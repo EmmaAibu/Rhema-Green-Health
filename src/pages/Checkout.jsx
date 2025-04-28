@@ -3,16 +3,22 @@ import React, { useState, useEffect } from "react";
 // Simulate cart items (replace with context/store integration)
 const mockCartItems = [
   {
-    name: "Organic Vitamin C",
-    price: 14.99,
+    name: "Flat Tummy Tea",
+    price: 49.99,
     quantity: 2,
-    image: "/images/vitamin-c.jpg",
+    image: "",
   },
   {
-    name: "Organic Vitamin D",
+    name: "Cinnamon Sticks/ (Powder)",
+    price: 6.99,
+    quantity: 1,
+    image: "",
+  },
+  {
+    name: "Organic Honey",
     price: 19.99,
     quantity: 1,
-    image: "/images/vitamin-d.jpg",
+    image: "",
   },
 ];
 

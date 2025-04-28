@@ -3,15 +3,15 @@ import React from "react";
 const mockOrders = [
   {
     id: 1,
-    customer: "john@example.com",
+    customer: "Nana Afia",
     items: 3,
-    total: 35.99,
+    total: 126.96,
     status: "Pending",
-    date: "2025-04-18",
+    date: "2025-04-28",
   },
   {
     id: 2,
-    customer: "mary@example.com",
+    customer: "Mary",
     items: 5,
     total: 62.5,
     status: "Shipped",

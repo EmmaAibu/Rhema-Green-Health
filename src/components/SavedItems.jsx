@@ -2,8 +2,9 @@ import React from "react";
 
 const SavedItems = () => {
   const saved = [
-    { name: "Organic Multivitamin", price: "$19.99" },
-    { name: "Herbal Tea Mix", price: "$9.99" },
+    { name: "Flat Tummy Tea", price: "$99.98" },
+    { name: "Cinnamon Sticks/ (Powder)", price: "$6.99" },
+    { name: "Organic Honey", price: "$19.99" },
   ];
 
   return (

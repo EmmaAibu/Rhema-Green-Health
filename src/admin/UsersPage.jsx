@@ -3,17 +3,24 @@ import React, { useState } from "react";
 const mockUsers = [
   {
     id: 1,
-    username: "john_doe",
-    email: "john@example.com",
+    username: "Nana Afia",
+    email: "emmaaibu40@.com",
     role: "Customer",
     status: "Active",
   },
   {
     id: 2,
     username: "mary_smith",
-    email: "mary@example.com",
-    role: "Admin",
+    email: "mary@gmail.com",
+    role: "Customer",
     status: "Inactive",
+  },
+  {
+    id: 3,
+    username: "Emmanuel Ashie",
+    email: "enashie@gmail.com",
+    role: "Admin",
+    status: "Active",
   },
 ];
 
