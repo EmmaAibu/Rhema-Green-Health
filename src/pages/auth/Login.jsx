@@ -26,7 +26,7 @@ const Login = () => {
       if (user?.role === "admin") {
         navigate("/admin");
       } else {
-        navigate("/account");
+        navigate("/checkout");
       }
     } catch (err) {
       setError("Login failed. Please check your credentials.");

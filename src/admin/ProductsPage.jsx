@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ProductForm from "./ProductForm";
 import { getAllProducts } from "../services/allProducts";
+import { apiDeleteProduct } from "../services/deleteProduct";
 
 const ProductsPage = () => {
   const [products, setProducts] = useState([]);
@@ -44,10 +45,16 @@ const ProductsPage = () => {
     setShowForm(true);
   };
 
-  const handleDelete = (id) => {
-    setProducts((prev) => prev.filter((p) => p._id !== id));
-    setShowForm(false);
-    setEditingProduct(null);
+  const handleDelete = async (id) => {
+    try {
+      await apiDeleteProduct(id);
+      setProducts((prev) => prev.filter((p) => p._id !== id));
+      setShowForm(false);
+      setEditingProduct(null);
+    } catch (error) {
+      console.error("Failed to delete product:", error);
+      alert("There was an error deleting the product. Please try again.");
+    }
   };
 
   const handleCancel = () => {
